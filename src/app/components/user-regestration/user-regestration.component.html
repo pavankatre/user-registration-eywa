@@ -1,0 +1,45 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <mat-card>
+          <mat-card-title>User Registration</mat-card-title>
+          <mat-card-content>
+            <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+              <div class="mb-3">
+                <mat-form-field class="w-100" appearance="fill">
+                  <mat-label>Username</mat-label>
+                  <input matInput formControlName="username" placeholder="Enter your username" />
+                  <mat-error *ngIf="registrationForm.controls['username'].invalid && registrationForm.controls['username'].touched">
+                    Username is required and must be at least 3 characters.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+  
+              <div class="mb-3">
+                <mat-form-field class="w-100" appearance="fill">
+                  <mat-label>Email</mat-label>
+                  <input matInput formControlName="email" placeholder="Enter your email" />
+                  <mat-error *ngIf="registrationForm.controls['email'].invalid && registrationForm.controls['email'].touched">
+                    Please enter a valid email address.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+  
+              <div class="mb-3">
+                <mat-form-field class="w-100" appearance="fill">
+                  <mat-label>Password</mat-label>
+                  <input matInput [type]="'password'" formControlName="password" placeholder="Enter your password" />
+                  <mat-error *ngIf="registrationForm.controls['password'].invalid && registrationForm.controls['password'].touched">
+                    Password is required and must be at least 6 characters.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+  
+              <button mat-raised-button color="primary" class="w-100" type="submit" [disabled]="registrationForm.invalid">Register</button>
+            </form>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  

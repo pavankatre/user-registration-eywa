@@ -1,0 +1,71 @@
+
+/* Global styles for the form container */
+::ng-deep .container {
+    background-color: #2c2f33 !important; 
+    padding: 2rem !important;
+    border-radius: 10px !important;
+  }
+  
+  /* Center the form in the middle of the page */
+  ::ng-deep .row {
+    justify-content: center !important;
+  }
+  
+  /* Card styling */
+  ::ng-deep mat-card {
+    background-color: #40444b !important; 
+    color: #fff !important; 
+    padding: 2rem !important;
+    border-radius: 10px !important;
+  }
+  
+  /* Form field styling */
+  ::ng-deep mat-form-field {
+    .mat-form-field-wrapper {
+      background-color: #2c2f33 !important; 
+      border-radius: 5px !important;
+    }
+  
+    .mat-form-field-underline {
+      background-color: #7289da !important;
+    }
+  
+    .mat-form-field-label {
+      color: #7289da !important; 
+    }
+  
+    .mat-input-element {
+      color: #fff !important; 
+    }
+  
+    .mat-error {
+      color: #f04747 !important; 
+    }
+  }
+  
+  /* Button styling */
+  ::ng-deep button[type="submit"] {
+    background-color: #7289da !important; 
+    color: #fff !important;
+    border-radius: 5px !important;
+    padding: 0.5rem 1rem !important;
+    margin-top: 1rem !important;
+    font-weight: bold !important;
+  }
+  
+  /* Additional styling for a neat look */
+  ::ng-deep button[type="submit"]:disabled {
+    background-color: #4a5568 !important; 
+    cursor: not-allowed !important;
+  }
+  
+  /* Padding for the card content */
+  ::ng-deep mat-card-content {
+    padding: 1rem 0 !important;
+  }
+  
+  /* Margin for form fields */
+  ::ng-deep .mb-3 {
+    margin-bottom: 1.5rem !important;
+  }
+  
